@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Birthday</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Guess Who?</string>
+    <string name="title_gallery">Memory Lane</string>
+    <string name="title_secret">Secret</string>
+    <string name="title_video">Video</string>
+    <string name="dummy_password">Guess the person</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="hint_secret"> Hint: This is hint</string>
+</resources>

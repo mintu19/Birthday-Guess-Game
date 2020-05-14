@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.akshit.app.birthday.ui.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.akshit.app.birthday.ui.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_video"
+            app:destination="@id/navigation_video" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.akshit.app.birthday.ui.GalleryFragment"
+        android:label="@string/title_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/navigation_secret"
+        android:name="com.akshit.app.birthday.ui.SecretFragment"
+        android:label="@string/title_secret"
+        tools:layout="@layout/fragment_secret" />
+
+    <fragment
+        android:id="@+id/navigation_video"
+        android:name="com.akshit.app.birthday.ui.VideoFragment"
+        android:label="@string/title_video"
+        tools:layout="@layout/fragment_video" >
+        <argument
+            android:name="uri"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
